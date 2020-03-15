@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weipt.dao.IUserDao">
+    <insert id="insert" parameterType="com.weipt.pojo.User">
+        insert into user_test(user_name,user_pwd,user_age) values (#{user_name},#{user_pwd},#{user_age})
+    </insert>
+</mapper>
