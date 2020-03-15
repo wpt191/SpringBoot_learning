@@ -6,4 +6,8 @@
     <insert id="insert" parameterType="com.weipt.pojo.User">
         insert into user_test(user_name,user_pwd,user_age) values (#{user_name},#{user_pwd},#{user_age})
     </insert>
+
+    <select id="selectByName" parameterType="String" resultType="com.weipt.pojo.User">
+        select * from user_test where user_name = #{user_name}
+    </select>
 </mapper>

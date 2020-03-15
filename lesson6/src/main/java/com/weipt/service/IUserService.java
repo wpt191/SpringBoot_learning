@@ -7,7 +7,6 @@ import java.util.List;
 public interface IUserService {
     int insert(User user);
 
-    User selectByname(String name);
+    List<User> selectByName(String name);
 
-    List<User> selectByExample();
 }
